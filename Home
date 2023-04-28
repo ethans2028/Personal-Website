@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Edit this page</title>
+  <link rel="stylesheet" href="cpsc3700.css">
+</head>
+
+<body>
+
+  <h1>Ethan Sue's Personal Webiste!</h1>
+  <h2 id="demo">Hi, this is Ethan's Personal Website to showcase his Computer Science projects/skills, passions, and more!</br>
+There will be about, resume, projects, experience, and contact sections.</h2>
+<button onclick="myFunction(this, 'red')">Click me to change my color.</button>
+
+<script>
+function myFunction(element, color) {
+  element.style.color = color;
+}
+</script>
+</body>
+</html>
