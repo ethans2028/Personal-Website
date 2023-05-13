@@ -2,21 +2,53 @@
 <html>
 
 <head>
-  <title>Edit this page</title>
-  <link rel="stylesheet" href="cpsc3700.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethan Sue</title>
+
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
+  <header>
+    <nav>
+      <div class="container">
+        <h1>Ethan Sue</h1>
 
-  <h1>Ethan Sue's Personal Webiste!</h1>
-  <h2 id="demo">Hi, this is Ethan's Personal Website to showcase his Computer Science projects/skills, passions, and more!</br>
-There will be about, resume, projects, experience, and contact sections.</h2>
-<button onclick="myFunction(this, 'red')">Click me to change my color.</button>
+        <div class="menu">
+          <a href="#work" class="is-active">.work()</a>
+          <a href="#about">.about()</a>
+          <a href="#tools">.tools()</a>
+          <a href="#contact">.contact()</a>
+        </div>
 
-<script>
-function myFunction(element, color) {
-  element.style.color = color;
-}
-</script>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  
+  <section class="home" id="home">
+    <div id="home-text">
+      <h3>Hello, I'm</h3>
+      <h1>Ethan Sue</h1>
+      <h3>I'm an aspiring Software Developer looking for a challenging <br>role in a reputable organization to utilize my 2+ years of <br>IT experience, proven leadership and management skills <br>for the growth of the organization as well as to enhance my knowledge of new and emerging industry trends.</h2>
+    </div>
+  </section>
+  
+    
+    
+  
+
+
+  <script src="main.js">
+  function myFunction(element, color) {
+    element.style.color = color;
+  }
+  </script>
 </body>
 </html>
