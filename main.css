@@ -304,6 +304,20 @@ section {
   background-size:1050.54px 600px;
 }
 
+.work-img{
+  width: 1050.54px;
+  height: 600px;
+  background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(100, 100, 100, 0.45), 
+      rgba(100, 100, 100, 0.45)
+    ),
+    /* bottom, image */
+    url(/img/seoulz.png);
+  background-size:1050.54px 600px;
+}
+
 .content-padding {
   padding: 50px 0 50px 50px;
 }
