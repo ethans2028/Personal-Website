@@ -311,9 +311,16 @@ section {
 .proj-links {
   text-decoration: underline solid var(--secondary);
   
-  
+}
+.experience a:hover{
+  text-decoration: underline solid var(--accent);
+  transition: 0.4s;
 }
 
+.experience a p:hover {
+  color: var(--accent) !important;
+  transition: 0.4s;
+}
 .proj-link-spacing {
-  margin-top: 50px;
+  padding-top: 10px;
 }
