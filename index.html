@@ -21,17 +21,17 @@
         <a class="name" title="ethan.sue" href="#top">ethan.sue</a>
 
         <div class="menu">
-          <a href="#projects">.projects()</a>
-          <a href="#about">.about()</a>
-          <a href="#tools">.tools()</a>
-          <a href="#contact">.contact()</a>
+          <a href="/projects.html">.projects()</a>
+          <a href="/about.html">.about()</a>
+          <a href="/contact.html">.contact()</a>
+          <button class="themed" id="themed">Dark Mode</button>
         </div>
 
-        <button class="hamburger">
+        <!-- <button class="hamburger">
           <span></span>
           <span></span>
-          <span></span>
-        </button>
+          <span></span> 
+        </button> -->
       </div>
     </nav>
   </header>
@@ -39,14 +39,22 @@
   <div id="top" style="margin:0 auto;max-width:1260px;padding:0px 1.0875rem 1.45rem;padding-top:1rem;">
     <section id="home">
       <div id="home-text">
-        <h1>Hello, I'm Ethan</h1>
-        <h1 class="intro">I'm a Computer Science major and Entrepreneurship minor at Seattle University.</h1>
-        <h1 class="intro">I'm currently working in IT, but I'm also interested in Data Science, Machine Learning, and Cloud Engineering.</h1>
-        <h1 class="intro">Right now I'm training a machine learning model to predict student dropout rate.</h1>
+        <div class="greeting">
+          <h1>Hello, I'm Ethan</h1>
+          <div class="greeting-img">
+            <img src="/img/waving-emoji.png" alt="waving hand">
+          </div>
+          
+        </div>
+        
+        <h1 class="intro">0. I'm a Computer Science major and Entrepreneurship minor at Seattle University.</h1>
+        <h1 class="intro">1. I'm currently working in IT, but I'm also interested in Data Science, Machine Learning, and Cloud Engineering.</h1>
+        <h1 class="intro">2. Right now, I'm training a machine learning model to predict student dropout rate!</h1>
         <!-- I'm an aspiring Software Developer looking for a challenging role in a reputable organization. -->
       </div>
-      <a href="#projects"><img class="down-arrow" src="img\downarrow.gif" alt="down arrow"></a>
+      <!-- <a href="#projects"><img id="down-arrow" class="down-arrow" src="img\downarrow.gif" alt="down arrow"></a> -->
     </section>  
+
     <section id="projects">
       <h1 class="section-title">&#60;wrapper id="projects"&#62;</h1>
       
@@ -55,7 +63,6 @@
           <h1>0. Predicting Student Dropouts</h1>
           <h2>April - Pres</h2>
           <div class="proj-img-container">
-            <a href="https://github.com/ethans2028" target="_blank">
               <div class="proj-img">
               </div>
             </a>
@@ -65,10 +72,21 @@
             My goal is to help predict student success rate. I hope my work is useful to institutions hoping to improve the 
             identification of at risk students and assist them earlier. 
           </p>
-           <p>
+
+          <p>
             The attributes present in my dataset include demographic, macro-economic, and academic information for each student. Each student
             is classified into 3 categories: dropout, enrolled, and graduate.
           </p>
+
+          <h3>
+            // Access the Code
+          </h3>
+          <a target="_blank" rel="noopener noreferrer" class="proj-links" href="https://github.com/ethans2028">
+            <div>
+              <p>Repository</p>
+            </div>
+          </a>
+          
         </div>
       </div>
       <h1 class="section-title">&#60;&#92;wrapper&#62;</h1>
@@ -138,7 +156,7 @@
         
         <div class="contactForm">
           <form>
-            <h2>Send Message</h2>
+            <h2>Send a Message</h2>
             <div class="formBox">
               <span>Email</span>
               <input type="text" name="" required="required">
@@ -163,9 +181,6 @@
   
 
   <script src="main.js">
-  function myFunction(element, color) {
-    element.style.color = color;
-  }
   </script>
 </body>
 </html>
