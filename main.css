@@ -338,3 +338,12 @@ section {
 .proj-link-spacing {
   padding-top: 10px;
 }
+
+.coding-img {
+  width: 80%;
+  height: auto;
+}
+
+.coding-img img {
+  width: 100%;
+}
