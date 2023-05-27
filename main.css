@@ -300,7 +300,7 @@ section {
       rgba(100, 100, 100, 0.45)
     ),
     /* bottom, image */
-    url(/img/ml_project.png);
+    url(./img/ml_project.png);
   background-size:1050.54px 600px;
 }
 
@@ -314,7 +314,7 @@ section {
       rgba(100, 100, 100, 0.45)
     ),
     /* bottom, image */
-    url(/img/seoulz.png);
+    url(./img/seoulz.png);
   background-size:1050.54px 600px;
 }
 
