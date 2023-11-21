@@ -1,7 +1,7 @@
 :root {
   --accent: rgb(49, 130, 206);
-  --primary: black;
-  --secondary: white;
+  --primary: white;
+  --secondary: black;
 }
 
 .themed {
@@ -20,8 +20,8 @@
 }
 
 .dark-mode {
-  --primary: white;
-  --secondary: black;
+  --primary: black;
+  --secondary: white;
 }
 
 html {
