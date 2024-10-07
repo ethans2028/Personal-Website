@@ -1,0 +1,24 @@
+name: Push-to-S3
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        
+        steps:
+            - name: Checkout Repository
+              uses: actions/checkout@v4 # run checkout function to checkout 
+
+            - name: Configure AWS Credentials
+              uses: aws-actions/configure-aws-credentials@v4
+              with: 
+                aws-access-key-id: ${{secrets.TERRAFORM_S3_ACCESS_KEY}}
+                aws-secret-access-key: ${{secrets.TERRAFORM_S3_SECRET_ACCESS_KEY}}
+                aws-region: us-west-2
+            
+            - name: Deploy static site to S3 bucket
+              uses: aws s3 sync ./config/website/ s3://ethansue-website-dev --delete
