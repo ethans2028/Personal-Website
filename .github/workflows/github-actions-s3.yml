@@ -21,4 +21,4 @@ jobs:
                 aws-region: us-west-2
             
             - name: Deploy static site to S3 bucket
-              uses: aws s3 sync ./config/website/ s3://ethansue-website-dev --delete
+              run: aws s3 sync ./config/website/ s3://ethansue-website-dev --delete
