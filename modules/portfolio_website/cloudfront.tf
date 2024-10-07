@@ -1,4 +1,4 @@
-resource "aws_cloudfront_distribution" "website_distribution" {
+resource "aws_cloudfront_distribution" "portfolio_cloudfront_distribution" {
   enabled             = true
   is_ipv6_enabled     = true
   default_root_object = var.default_document
@@ -37,7 +37,7 @@ resource "aws_cloudfront_distribution" "website_distribution" {
 
     allowed_methods  = ["GET", "HEAD"]
     cached_methods   = ["GET", "HEAD"]
-    target_origin_id = aws_s3_bucket.website_bucket.bucket
+    target_origin_id = aws_s3_bucket.portfolio_bucket.bucket
 
     compress = true
 

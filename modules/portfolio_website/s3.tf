@@ -3,7 +3,7 @@ resource "aws_s3_bucket" "portfolio_bucket" {
 }
 
 resource "aws_s3_bucket_website_configuration" "portfolio_bucket_config" {
-    bucket = ""
+    bucket = aws_s3_bucket.portfolio_bucket.id
 
     index_document {
       suffix = var.default_document
@@ -16,7 +16,7 @@ resource "aws_s3_bucket_website_configuration" "portfolio_bucket_config" {
 }
 
 resource "aws_s3_bucket_public_access_block" "portfolio_bucket_access" {
-    bucket = aws_s3_bucket.portfolio_bucket
+    bucket = aws_s3_bucket.portfolio_bucket.id
 
     block_public_acls = false
     block_public_policy = false
@@ -35,13 +35,13 @@ data "aws_iam_policy_document" "portfolio_bucket_policy_document" {
     actions = ["s3:GetObject"]
     effect = "Allow"
     resources = [
-        "${aws_s3_bucket.portfolio_bucket.arn}"
+        "${aws_s3_bucket.portfolio_bucket.arn}/*"
     ]
   }
 }
 
 # use the iam policy document data source and attach it to the s3
 resource "aws_s3_bucket_policy" "portfolio_bucket_policy" {
-    bucket = aws_s3_bucket.portfolio_bucket
-    policy = data.aws_iam_policy_document.portfolio_bucket_policy_document
+    bucket = aws_s3_bucket.portfolio_bucket.id
+    policy = data.aws_iam_policy_document.portfolio_bucket_policy_document.json
 }

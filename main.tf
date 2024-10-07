@@ -9,5 +9,9 @@ terraform {
 
 provider "aws" {
   region = var.region
-  profile = var.profile
+}
+
+provider "aws" {
+    alias = "cert_region"
+    region = var.cert_region
 }

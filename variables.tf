@@ -6,10 +6,8 @@ variable "company_name" {
     default = "ethansue"
 }
 
-variable "profile" {}
-
 variable "stage" {}
 
 variable "region" {}
 
-
+variable "cert_region" {} 
